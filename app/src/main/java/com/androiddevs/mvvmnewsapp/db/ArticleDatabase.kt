@@ -12,7 +12,7 @@ import com.androiddevs.mvvmnewsapp.models.Article
     version = 1
 )
 
-@TypeConverters
+@TypeConverters(Converters::class)
 abstract class ArticleDatabase : RoomDatabase() {
 
     abstract fun getArticleDao(): ArticleDao
